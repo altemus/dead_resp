@@ -68,6 +68,14 @@ a:active {
     padding: 5px;
     border: 14px solid #99AAB5;
 }
+.gbusa_resize {
+  width:15%;
+  height:15%;
+}
+.percent_resize {
+  width:75%;
+  height:75%;
+}
 #pgupBtn {
     display: none;
     position: fixed;
