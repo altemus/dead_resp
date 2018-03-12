@@ -64,6 +64,15 @@ a:active {
     padding-right: 240px;
     font-size: 100%;
 }
+.disaster_itemno  {
+    color: #99AAB5;
+    font-family: "Comic Sans MS";
+    text-align: left;
+    padding-left: 0px;
+    padding-bottom: 15px;
+    padding-right: 240px;
+    font-size: 50%;
+}
 .title  {
     padding: 5px;
     border: 14px solid #99AAB5;
