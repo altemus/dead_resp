@@ -47,6 +47,7 @@ a:active {
     color: hotpink;
 }
 .map-title  {
+    white-space: nowrap;
     color: #99AAB5;
     font-family: "Comic Sans MS";
     text-align: left;
@@ -56,6 +57,7 @@ a:active {
     font-size: 115%;
 }
 .map-body  {
+    white-space: nowrap;
     color: #99AAB5;
     font-family: "Comic Sans MS";
     text-align: left;
