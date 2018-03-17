@@ -34,10 +34,3 @@
 #homeBtn:hover {
     background-color: #555;
 }
-#clock {
-    display: none;
-    position: fixed;
-    top: 30px;
-    left: 50px;
-    z-index: 99;
-}
