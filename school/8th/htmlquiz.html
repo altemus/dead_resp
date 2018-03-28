@@ -11,27 +11,30 @@
 		<br>
 		<form>
 		<center>
+			<p class="sectionheader question">Data Collection</p>
 			<div class="question">
 				<p class="nowrap">What is your full and entire legal name?</p>
 				<input type="text" style="text-align:center;" name="fullname"="" placeholder="John Edward Smith, XIV..." maxlength="25"> <!-- Max length is 25 characters, placeholder to make the textbox not look like a random and out of place rectangle on my page -->
 			</div>
 			<br>
-			<br>
+			<p class="sectionheader question">Multiple Choice</p>
 			<div class="question">
-				<p class="nowrap">Q1: Which 8th grade team are you on?</p>
-				<hr>
-				<select>
-					<option name="Adventure" value="CoolKids" selected="">Adventure</option> <!-- The tag "selected" tells Chrome that this option in particular should be automatically selected -->
-					<option name="Journey" value="Losers">Journey</option>
-				</select>
-			</div>
-			<div class="question">
-				<p class="nowrap">Q2: What does CSS stand for?</p>
+				<p class="nowrap">Q1: What does CSS stand for?</p>
 				<hr>
 				<input type="radio" name="WhatIsCSS" value="WRONG" style="float:left;">Cascading Sculpting Sheet<br>
 				<input type="radio" name="WhatIsCSS" value="CORRECT" style="float:left;">Cascading Style Sheet<br>
 				<input type="radio" name="WhatIsCSS" value="WRONG" style="float:left;">Correct Style Sheetwork<br>
 				<input type="radio" name="WhatIsCSS" value="WRONG" style="float:left;">Calling Style Sheet<br>
+			</div>
+			<br>
+			<p class="sectionheader question">Pick An Option</p>
+			<div class="question">
+				<p class="nowrap">Q: Which 8th grade team are you on?</p>
+				<hr>
+				<select>
+					<option name="Adventure" value="CoolKids" selected="">Adventure</option> <!-- The tag "selected" tells Chrome that this option in particular should be automatically selected -->
+					<option name="Journey" value="Losers">Journey</option>
+				</select>
 			</div>
 			</center>
 			<input type="submit" value="Submit" style="cursor:pointer;" title="Submit your response">
