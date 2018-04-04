@@ -13,31 +13,70 @@
 		<center>
 			<p class="sectionheader question">Data Collection</p>
 			<div class="question">
-				<p class="nowrap">What is your full and entire legal name?</p>
+				<p class="">What is your full and entire legal name?</p>
 				<input type="text" style="text-align:center;" name="fullname"="" placeholder="John Edward Smith, XIV..." maxlength="25"> <!-- Max length is 25 characters, placeholder to make the textbox not look like a random and out of place rectangle on my page -->
 			</div>
 			<br>
 			<p class="sectionheader question">Multiple Choice</p>
 			<div class="question">
-				<p class="">Q1: What does CSS stand for?</p>
+				<p class="">Q1: What exactly does does the abbreviation "CSS" stand for?</p>
 				<hr>
 				<input type="radio" name="MC-Q1" value="WRONG" style="float:left;">Cascading Sculpting Sheet<br>
+				<hr class="mid">
 				<input type="radio" name="MC-Q1" value="CORRECT" style="float:left;">Cascading Style Sheet<br>
-				<input type="radio" name="MC-Q1" value="WRONG" style="float:left;">Correct Style Sheetwork<br>
-				<input type="radio" name="MC-Q1" value="WRONG" style="float:left;">Calling Style Sheet<br>
+				<hr class="mid">
+				<input type="radio" name="MC-Q1" value="WRONG" style="float:left;">Correct Styling Sheetwork<br>
+				<hr class="mid">
+				<input type="radio" name="MC-Q1" value="WRONG" style="float:left;">Creative Style Sheet<br>
 			</div>
 			<div class="question">
 				<p class="">Q2: Which tag is absolutely required in the writing of an html document?</p>
 				<hr>
 				<input type="radio" name="MC-Q2" value="CORRECT" style="float:left;">&lthtml&gt<br>
+				<hr class="mid">
 				<input type="radio" name="MC-Q2" value="WRONG" style="float:left;">&ltbody&gt<br>
+				<hr class="mid">
 				<input type="radio" name="MC-Q2" value="WRONG" style="float:left;">&ltform&gt<br>
+				<hr class="mid">
 				<input type="radio" name="MC-Q2" value="WRONG" style="float:left;">&lthead&gt<br>
+			</div>
+			<div class="question">
+				<p class="">Q3: Which of these options show the correct way html tags are to be opened and closed?</p>
+				<hr>
+				<input type="radio" name="MC-Q3" value="WRONG" style="float:left;"> &lthead&gt &lthtml&gt &lt/head&gt &ltbody&gt &lt/body&gt &lt/html&gt <br>
+				<hr class="mid">
+				<input type="radio" name="MC-Q3" value="WRONG" style="float:left;"> &lthtml&gt &ltbody&gt &lthead&gt &lt/head&gt &lt/body&gt &lt/html&gt <br>
+				<hr class="mid">
+				<input type="radio" name="MC-Q3" value="WRONG" style="float:left;"> &lt/html&gt &lt/head&gt &lthead&gt &lt/body&gt &ltbody&gt &lthtml&gt <br>
+				<hr class="mid">
+				<input type="radio" name="MC-Q3" value="CORRECT" style="float:left;"> &lthtml&gt &lthead&gt &lt/head&gt &ltbody&gt &lt/body&gt &lt/html&gt <br>
+			</div>
+			<div class="question">
+				<p class="">Q4: Which format is HTML most commonly saved and or encoded in?</p>
+				<hr>
+				<input type="radio" name="MC-Q4" value="WRONG" style="float:left;"> ANSI <br>
+				<hr class="mid">
+				<input type="radio" name="MC-Q4" value="WRONG" style="float:left;"> Unicode <br>
+				<hr class="mid">
+				<input type="radio" name="MC-Q4" value="CORRECT" style="float:left;"> UFT-8 <br>
+				<hr class="mid">
+				<input type="radio" name="MC-Q4" value="WRONG" style="float:left;"> Unicode big endian <br>
+			</div>
+			<div class="question">
+				<p class="">Q5: Are there any incorrect answers to this question that is totally not a spacer?</p>
+				<hr>
+				<input type="radio" name="MC-Q4" value="CORRECT" style="float:left;"> No. <br>
+				<hr class="mid">
+				<input type="radio" name="MC-Q4" value="CORRECT" style="float:left;"> NOPE! <br>
+				<hr class="mid">
+				<input type="radio" name="MC-Q4" value="CORRECT" style="float:left;"> Yessir! (Actually, no.) <br>
+				<hr class="mid">
+				<input type="radio" name="MC-Q4" value="CORRECT" style="float:left;"> All of the above. (and also no.) <br>
 			</div>
 			<br>
 			<p class="sectionheader question">Pick An Option</p>
 			<div class="question">
-				<p class="">Q: Which 8th grade team are you on?</p>
+				<p class="">Q6: Which 8th grade team are you on?</p>
 				<hr>
 				<select>
 					<option name="Adventure" value="CoolKids" selected="">Adventure</option> <!-- The tag "selected" tells Chrome that this option in particular should be automatically selected -->
