@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>HTML Quiz</title>
-	<link rel="stylesheet" href="../../source/school/html_quiz.css"> <!-- This line is the direct link to my Cascading Style Sheet. It's best not to modify this. -->
+	<link rel="stylesheet" href="style.css"> <!-- This line is the direct link to my Cascading Style Sheet. It's best not to modify this. -->
 	<link rel="icon" href="https://sirtowsalot.github.io/ico/bird.png" type="image/x-icon"> <!-- This line calls my icon to appear at the top of the page -->
 </head>
 <body>
@@ -15,6 +15,14 @@
 			<div class="question">
 				<p class="">What is your full and entire legal name?</p>
 				<input type="text" style="text-align:center;" name="fullname"="" placeholder="John Edward Smith, XIV..." maxlength="25"> <!-- Max length is 25 characters, placeholder to make the textbox not look like a random and out of place rectangle on my page -->
+			</div>
+			<div class="question">
+				<p class="">How did you get here?</p>
+				<input type="text" style="text-align:center;" name="sentby"="" placeholder="Google, Sitemap, etc..." maxlength="40">
+			</div>
+			<div class="question">
+				<p class="">What are your intentions with my html quiz?</p>
+				<input type="text" style="text-align:center;" name="intentions"="" placeholder="My intentions are...." maxlength="40">
 			</div>
 			<br>
 			<p class="sectionheader question">Multiple Choice</p>
@@ -51,42 +59,49 @@
 				<hr class="mid">
 				<input type="radio" name="MC-Q3" value="CORRECT" style="float:left;"> &lthtml&gt &lthead&gt &lt/head&gt &ltbody&gt &lt/body&gt &lt/html&gt <br>
 			</div>
-			<div class="question">
-				<p class="">Q4: Which format is HTML most commonly saved and or encoded in?</p>
-				<hr>
-				<input type="radio" name="MC-Q4" value="WRONG" style="float:left;"> ANSI <br>
-				<hr class="mid">
-				<input type="radio" name="MC-Q4" value="WRONG" style="float:left;"> Unicode <br>
-				<hr class="mid">
-				<input type="radio" name="MC-Q4" value="CORRECT" style="float:left;"> UFT-8 <br>
-				<hr class="mid">
-				<input type="radio" name="MC-Q4" value="WRONG" style="float:left;"> Unicode big endian <br>
-			</div>
-			<div class="question">
-				<p class="">Q5: Are there any incorrect answers to this question that is totally not a spacer?</p>
-				<hr>
-				<input type="radio" name="MC-Q4" value="CORRECT" style="float:left;"> No. <br>
-				<hr class="mid">
-				<input type="radio" name="MC-Q4" value="CORRECT" style="float:left;"> NOPE! <br>
-				<hr class="mid">
-				<input type="radio" name="MC-Q4" value="CORRECT" style="float:left;"> Yessir! (Actually, no.) <br>
-				<hr class="mid">
-				<input type="radio" name="MC-Q4" value="CORRECT" style="float:left;"> All of the above. (and also no.) <br>
-			</div>
 			<br>
 			<p class="sectionheader question">Pick An Option</p>
 			<div class="question">
-				<p class="">Q6: Which 8th grade team are you on?</p>
+				<p class="">Q4: Which 8th grade team are you on?</p>
 				<hr>
 				<select>
 					<option name="Adventure" value="CoolKids" selected="">Adventure</option> <!-- The tag "selected" tells Chrome that this option in particular should be automatically selected -->
 					<option name="Journey" value="Losers">Journey</option>
 				</select>
 			</div>
+			<div class="question">
+				<p class="">Q5: Which NFL Team do you associate with?</p>
+				<hr>
+				<select>
+					<option name="NFLTEAM" value="spacer" selected hidden>Select an NFL team...</option> <!-- The tag "selected" tells Chrome that this option in particular should be automatically selected -->
+					<option name="NFLTEAM" value="GOPATS">Patriots</option>
+					<option name="NFLTEAM" value="notapatsfan" disabled>Eagles</option>
+					<option name="NFLTEAM" value="notapatsfan" disabled>Ohio State</option>
+					<option name="NFLTEAM" value="notapatsfan" disabled>Penn State</option>
+				</select>
+			</div>
+			<div class="question">
+				<p class="">Q6: Why are you taking this quiz?</p>
+				<hr>
+				<select>
+					<option name="reason" value="spacer" selected hidden>Select a reason...</option> <!-- The tag "selected" tells Chrome that this option in particular should be automatically selected -->
+					<option name="reason" value="Teacher">I'm a teacher Grading This Assignment</option>
+					<option name="reason" value="curious">Curiosity If I'm Honest</option>
+					<option name="reason" value="bored">I'm bored</option>
+					<option name="reason" value="seewhathappens">I just wanted to see what happens</option>
+				</select>
+			</div>
+			<br>
+			<p class="sectionheader question">Text boxes!</p>
 			</center>
 			<input type="submit" value="Submit" style="cursor:pointer;" title="Submit your response">
 		</center>
 		</form>
+		<div id="main_cont">
+			<p>Here's a link to W3 Schools! Give them a visit once you finish!</p>
+			<a href="http://www.w3schools.com/">http://www.w3schools.com/</a>
+		</div>
 	</center>
 </body>
 </html>
+
