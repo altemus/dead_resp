@@ -7,7 +7,7 @@
     border: none;
     outline: none;
     background-color: #44585f;
-    color: #242f32;
+    color: gray;
     cursor: pointer;
     padding: 15px;
     border-radius: 10px;
@@ -25,7 +25,7 @@
     border: none;
     outline: none;
     background-color: #44585f;
-    color: #242f32;
+    color: gray;
     cursor: pointer;
     padding: 15px;
     border-radius: 10px;
