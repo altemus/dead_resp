@@ -160,3 +160,30 @@ iframe	  {
     padding: 6px 12px;
     border: none;
 }
+/* ===============================================   FOOTER CODE ============== FOOTER CODE ================ FOOTER CODE ============ FOOTER CODE =================================================== */
+#footer	{
+	font-family: "Comic Sans MS";
+	color: #99AAB5;
+	padding-top: 250px;
+	position: static;
+	bottom: 0px;
+}
+table, th, td	{
+	border-collapse: collapse;
+}
+table	{
+	width: 100%;
+}
+td	{
+	padding-right: 125px;
+}
+.caption	{
+	border-bottom: 2px solid gray;
+	padding-right: 240px;
+}
+.legalinfo	{
+	padding-right: 225px;
+}
+.foot_body	{
+	background-color: #2C2F33;
+}
