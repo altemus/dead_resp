@@ -12,55 +12,84 @@
 <body>
   <div class="title" id="top">
     <h1>Sirtowsalot's Website</h1>
-    <h2>This is a simple website for anything I feel I may want to archive, or store. Feel free to take a look.</h2>
   </div>
-  <center><iframe src="source/clock/clock.html" scrolling="no"></iframe>
-  <script>iFrameResize({log:true})</script></center>
-  <h2> #HHMMSS; Hour, Hour, Minute, Minute, Second, Second </h2>
-  <hr class="head">
-  <ul class="map-title" style="list-style-type:none">
-    <li>Sub-sites:</li>
-	<ul class="map-body" style="list-style-type:disc">
-      <li>School Work</li>
-	    <ol type="1">
-		  <li><a href="school/8th/htmlquiz">HTML Quiz</a></li>
-		  <li><a href="school/8th/recipe">Recipe</a></li>
-		  <li><a href="school/8th/form">Form</a></li>
-		  <li><a href="school/8th/dropdownmenus">Drop-down Menus</a></li>
-		  <li><a href="school/7th/scrugrams/gingerale">Scrugram's Gingerale</a></li>
-		  <ul class="map-body" type="I">
-		    <li><a href="school/7th/scrugrams/sub/aboutus">About Us</a></li>
-		    <li><a href="school/7th/scrugrams/sub/products">Products</a></li>
-			<li><a href="school/7th/scrugrams/sub/buynow">Buy Now ("Thank you for purchasing" page)</a></li>
-		  </ul>
-		  <li><a href="school/7th/larz_example">Larzalere's Example "Eagles" Website</a></li>
-		  <li><a href="school/7th/tours">Tours</a></li>
-		  <li><a href="school/7th/PaPARKS">PA. PARKS</a></li>
-		</ol>
-		<li>Diesel</li>
-	    <ol type="1">
-		  <li><a href="diesel/smokey">Smokey</a></li>
-		</ol>
-		<li> Intriguing Disasters</li>
-		<ol type="1">
-		  <li><a href="disasters">Disasters HUB</a></li>
-		  
-	  <!--- RESERVED FOR FUTURE USE UNTIL FURTHER NOTICE --->
-      <!--- <li>Personal Uploads</li>
-	    <ol type="1">
-		  <li><a href="FILE LINK">NAME</a></li>
-		  <li><a href="FILE LINK">NAME</a></li>
-		</ol> --->
+  <div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'Home')" id="defaultOpen">Home</button>
+    <button class="tablinks" onclick="openCity(event, 'Sitemap')">Sitemap</button>
+    <button class="tablinks" onclick="openCity(event, 'Secret')">Super Dooper Secret</button>
+  </div>
+  <div id="Home" class="tabcontent">
+    <center><iframe src="source/clock/clock.html" scrolling="no"></iframe>
+    <script>iFrameResize({log:true})</script></center>
+    <h2> #HHMMSS; Hour, Hour, Minute, Minute, Second, Second </h2>
+    <hr class="head">
+	<h2>This is a simple website for anything I feel I may want to archive, or store. Feel free to take a look.</h2>
+  </div>
+  <div id="Sitemap" class="tabcontent">
+    <ul class="map-title" style="list-style-type:none">
+      <li>Sub-sites:</li>
+	  <ul class="map-body" style="list-style-type:disc">
+        <li>School Work</li>
+	      <ol type="1">
+		    <li><a href="school/8th/htmlquiz">HTML Quiz</a></li>
+		    <li><a href="school/8th/recipe">Recipe</a></li>
+		    <li><a href="school/8th/form">Form</a></li>
+		    <li><a href="school/8th/dropdownmenus">Drop-down Menus</a></li>
+		    <li><a href="school/7th/scrugrams/gingerale">Scrugram's Gingerale</a></li>
+		    <ul class="map-body" type="I">
+		      <li><a href="school/7th/scrugrams/sub/aboutus">About Us</a></li>
+		      <li><a href="school/7th/scrugrams/sub/products">Products</a></li>
+			  <li><a href="school/7th/scrugrams/sub/buynow">Buy Now ("Thank you for purchasing" page)</a></li>
+		    </ul>
+		    <li><a href="school/7th/larz_example">Larzalere's Example "Eagles" Website</a></li>
+		    <li><a href="school/7th/tours">Tours</a></li>
+		    <li><a href="school/7th/PaPARKS">PA. PARKS</a></li>
+		  </ol>
+		  <li>Diesel</li>
+	      <ol type="1">
+		    <li><a href="diesel/smokey">Smokey</a></li>
+		  </ol>
+		  <li> Intriguing Disasters</li>
+		  <ol type="1">
+		    <li><a href="disasters">Disasters HUB</a></li>
+		    
+	    <!--- RESERVED FOR FUTURE USE UNTIL FURTHER NOTICE --->
+        <!--- <li>Personal Uploads</li>
+	      <ol type="1">
+		    <li><a href="FILE LINK">NAME</a></li>
+		    <li><a href="FILE LINK">NAME</a></li>
+		  </ol> --->
 		
-	</ul>
-  </ul>
-  <ul class="map-title" style="list-style-type:none">
-    <li>Other Stuff:</li>
-	<ul class="map-body" style="list-style-type:disc">
-      <li><a href="personal/hamilton">Hamilton Musical</a></li>
-	  <li><a href="source">Github Source</a></li>
-	  <li><a target="blank_" href="file:///C:/Users/Altemus/Documents/GitHub/Sirtowsalot.github.io/index.html">Link for my laptop. This will be a 404 page for you.</a></li>
-	</ul>
-  </ul>
+	  </ul>
+    </ul>
+    <ul class="map-title" style="list-style-type:none">
+      <li>Other Stuff:</li>
+	  <ul class="map-body" style="list-style-type:disc">
+        <li><a href="personal/hamilton">Hamilton Musical</a></li>
+	    <li><a href="source">Github Source</a></li>
+	    <li><a target="blank_" href="file:///C:/Users/Altemus/Documents/GitHub/Sirtowsalot.github.io/index.html">Link for my laptop. This will be a 404 page for you.</a></li>
+	  </ul>
+    </ul>
+  </div>
+  <div id="Secret" class="tabcontent">
+    <h3>Well hello there! This is a good time to tell you about the lack of a secret on this page! It's totally not a button hidden on this page as a background color! pffft. Nope. You should just click back to where you came from!</h3>
+  </div>
+  <script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+	// Get the element with id="defaultOpen" and click on it
+	document.getElementById("defaultOpen").click();
+  </script>
 </body>
 </html>
