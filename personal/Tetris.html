@@ -7,6 +7,7 @@
   <script type="text/javascript" src="../source/buttons.js"></script>
   <button type = "button" onClick="homeFunction()" id="homeBtn" title="Sends you to the homepage">Home</button>
   <button onclick="topFunction()" id="pgupBtn" title="Sends you to the top of this page">Go to top</button>
+  <audio id="music" loop src="ThemeMusic.mp3"> </audio>
   <style>
     body      { font-family: Helvetica, sans-serif;background-color:#99AAB5; }
     #tetris   { margin: 1em auto; padding: 1em; border: 4px solid black; border-radius: 10px; background-color: #99AAB5; }
@@ -49,10 +50,10 @@
   <div id="tetris">
     <div id="menu">
       <p><canvas id="upcoming"></canvas></p>
-      <p>score <span id="score">00000</span></p>
-      <p>rows <span id="rows">0</span></p>
+      <p>Score: <span id="score">00000</span></p>
+      <p>Rows: <span id="rows">0</span></p>
 	  <hr>
-	  <div id="start"> <center><button id="start"><a href="javascript:play();";>START</a></button><br><br><p><b>Up Arrow:</b> Flip the Block</p><p><b>Down Arrow:</b> Speed up the drop</p><p><b>Left Arrow:</b> Move the Block left</p><p><b>Right Arrow:</b> Move the Block right</p></center></div>
+	  <div id="start"> <center><button id="start"><a href="javascript:play(); javascript:playMusic()";>START</a></button><br><br><p><b>Up Arrow:</b> Flip the Block</p><p><b>Down Arrow:</b> Speed up the drop</p><p><b>Left Arrow:</b> Move the Block left</p><p><b>Right Arrow:</b> Move the Block right</p></center></div>
     </div>
     <canvas id="canvas">
       Sorry, this example cannot be run because your browser does not support the &lt;canvas&gt; element
@@ -62,6 +63,26 @@
   <script src="../source/personal/stats.js"></script>
   <script>
 
+  
+    //-------------------------------------------------------------------------
+    // GAME THEME
+    //-------------------------------------------------------------------------
+
+    function playMusic(){
+		music.play()
+    }
+
+	var x = document.getElementById("music"); 
+
+	function playAudio() { 
+		x.play(); 
+	} 
+	
+	function pauseAudio() { 
+		x.pause();
+		x.currentTime = 0.0; /* Resets the audio for a smooth level restart */
+	}
+	
     //-------------------------------------------------------------------------
     // base helper methods
     //-------------------------------------------------------------------------
@@ -192,7 +213,6 @@
     //-------------------------------------------------------------------------
 
     function run() {
-
       showStats(); // initialize FPS counter
       addEvents(); // attach keydown and resize events
 
@@ -205,7 +225,6 @@
         last = now;
         requestAnimationFrame(frame, canvas);
       }
-
       resize(); // setup all our sizing information
       reset();  // reset the per-game variables
       frame();  // start the first frame
@@ -256,8 +275,8 @@
     // GAME LOGIC
     //-------------------------------------------------------------------------
 
-    function play() { hide('start'); reset();          playing = true;  }
-    function lose() { show('start'); setVisualScore(); playing = false; alert('GAME OVER! Your score was ' + score ); }
+    function play() { hide('start'); reset(); playing = true; playMusic(); }
+    function lose() { show('start'); setVisualScore(); playing = false; pauseAudio(); alert('GAME OVER! Your score was ' + score ); }
 
     function setVisualScore(n)      { vscore = n || score; invalidateScore(); }
     function setScore(n)            { score = n; setVisualScore(n);  }
@@ -272,7 +291,7 @@
     function clearActions()         { actions = []; }
     function setCurrentPiece(piece) { current = piece || randomPiece(); invalidate();     }
     function setNextPiece(piece)    { next    = piece || randomPiece(); invalidateNext(); }
-
+	
     function reset() {
       dt = 0;
       clearActions();
@@ -304,7 +323,6 @@
         case DIR.DOWN:  drop();          break;
       }
     }
-
     function move(dir) {
       var x = current.x, y = current.y;
       switch(dir) {
