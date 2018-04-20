@@ -4,8 +4,8 @@
 	<title>HTML Quiz</title>
 	<link rel="stylesheet" href="../../source/school/html_quiz.css"> <!-- This line is the direct link to my Cascading Style Sheet. It's best not to modify this. -->
 	<link rel="icon" href="https://sirtowsalot.github.io/ico/bird.png" type="image/x-icon"> <!-- This line calls my icon to appear at the top of the page -->
-	<link rel="stylesheet" href="source/buttons.css">
-	<script type="text/javascript" src="../../source/buttons.js"></script>
+	<link rel="stylesheet" href="https://sirtowsalot.github.io/source/buttons.css">
+	<script type="text/javascript" src="https://sirtowsalot.github.io/source/buttons.js"></script>
     <button type="button" onClick="homeFunction()" id="homeBtn" title="Sends you to the homepage">Home</button>
     <button onclick="topFunction()" id="pgupBtn" title="Sends you to the top of this page">Go to top</button>
 </head>
@@ -101,12 +101,24 @@
 					</select>
 				</div>
 				<br>
-			</div>
-			<div id="page4">
 				<p class="sectionheader question">Text boxes!</p>
+				<div class="question">
+					<p>Q7: Are there any other questions that you would to see on this quiz?</p>
+					<hr>
+					<textarea rows="5" cols="50" placeholder="Enter response here..."></textarea>
+				</div>
+				<div class="question">
+					<p>Q8: What interests you in the technological field?</p>
+					<hr>
+					<textarea rows="5" cols="50" placeholder="Enter your response here..."></textarea>
+				</div>
+				<div class="question">
+					<p>Q9: What bracket is required at the begining of an html document?</p>
+					<hr>
+					<textarea rows="5" cols="50" placeholder="Enter your response here... [Hint: <DOCTYPE...]"></textarea>
+				</div>
 				</center>
 				<input type="submit" value="Submit" style="cursor:pointer;" title="Submit your response">
-			</div>
 			</center>
 			</form>
 			<center>
