@@ -88,22 +88,19 @@ iframe	  {
 /* Style the tab */
 .tab {
     overflow: hidden;
-	border: 0px solid #99AAB5;
-	border-top: none;
     background-color: white;
+	top: 0;
 }
-
-/* Style the buttons inside the tab */
-.tab button {
-	color: black;
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: 0px solid #99AAB5;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-    font-size: 17px;
+.tab button { /* Style the buttons inside the tab */
+    background-color: transparent;
+    cursor: default;
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    vertical-align: middle;
+    width: 2px;
+    text-shadow: 0 0 black;
+	background-color: rgba(158,158,158,1);
 }
 
 /* Change background color of buttons on hover */

@@ -1,7 +1,17 @@
 <!doctype html>
 <html>
 <head>
-  <title> Sirtowsalot's Website </title>
+	<div id="Header">
+		<div class="title" id="top">
+			<h1>Sirtowsalot's Website</h1>
+		</div>
+		<div class="tab">
+			<h1 class="tabTitle">Sirtowsalot's Website</h1>
+			<button class="tablinks" onclick="tabBar(event, 'Home')" id="defaultHome">Home</button>
+			<button class="tablinks" onclick="tabBar(event, 'Sitemap')">Sitemap</button>
+			<button class="tablinks" onclick="tabBar(event, 'Secret')">Super Dooper Secret</button>
+		</div>
+	</div>
   <link rel="icon" href="ico/bird.png" type="image/x-icon">
   <link rel="stylesheet" href="source/index/buttons_index.css">
   <script type="text/javascript" src="source/index/buttons_index.js"></script>
@@ -9,15 +19,6 @@
   <link rel="stylesheet" href="source/index/main-css.css">
 </head>
 <body>
-<div id="Header">
-	<div class="title" id="top">
-		<h1>Sirtowsalot's Website</h1>
-	</div>
-	<div class="tab">
-		<button class="tablinks" onclick="tabBar(event, 'Home')" id="defaultHome">Home</button>
-		<button class="tablinks" onclick="tabBar(event, 'Sitemap')">Sitemap</button>
-		<button class="tablinks" onclick="tabBar(event, 'Secret')">Super Dooper Secret</button>
-	</div>
 <div id="Home" class="tabcontent">
 	<div id="Clock">
 		<center><iframe src="source/clock/clock.html" scrolling="no"></iframe>
