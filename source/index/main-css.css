@@ -88,18 +88,18 @@ iframe	  {
 /* Style the tab */
 .tab {
     overflow: hidden;
-	border: 3px solid #99AAB5;
+	border: 0px solid #99AAB5;
 	border-top: none;
-    background-color: #2C2F33;
+    background-color: white;
 }
 
 /* Style the buttons inside the tab */
 .tab button {
-	color: #99AAB5;
+	color: black;
     background-color: inherit;
     float: left;
     border: none;
-    outline: 1px solid #99AAB5;
+    outline: 0px solid #99AAB5;
     cursor: pointer;
     padding: 14px 16px;
     transition: 0.3s;
@@ -108,12 +108,12 @@ iframe	  {
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-    background-color: #555;
+    background-color: white;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-    background-color: #555;
+    background-color: white;
 }
 
 /* Style the tab content */
