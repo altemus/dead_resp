@@ -1,14 +1,14 @@
 ﻿::-webkit-scrollbar {display:none;}
 body  {
-    background-color: #2C2F33;
+    background-color: white;
 }
 h1  {
-    color: #99AAB5;
+    color: black;
     font-family: "Comic Sans MS";
     text-align: center;
 }
 h2  {
-    color: #99AAB5;
+    color: black;
     font-family: "Comic Sans MS";
     text-align: center;
     padding-left: 240px;
@@ -17,7 +17,7 @@ h2  {
     font-size: 100%;
 }
 h3  {
-    color: #99AAB5;
+    color: black;
     font-family: "Comic Sans MS";
     text-align: left;
     padding-left: 240px;
