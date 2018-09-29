@@ -161,6 +161,7 @@ iframe	  {
 	position: fixed;
 	bottom: 0px;
 	max-width: 100%;
+	padding-right: 5px;
 }
 table, th, td	{
 	border-collapse: collapse;
