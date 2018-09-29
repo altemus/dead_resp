@@ -6,8 +6,10 @@
 body  {
     background-image: url("http://www.7diphone.com/wp-content/uploads/City/1136/Tall%20Tower-640x1136%20wallpapers.jpg");
 }
-mainBGRND {
+#mainBGRND {
 	background-color: white;
+	margin: -7px 45px 20px:
+	border-radius: 2%;
 }
 h1  {
     color: black;
