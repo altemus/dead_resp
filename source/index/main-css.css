@@ -133,6 +133,7 @@ iframe	  {
     margin-left: 8px;
     font-weight: 900;
     font-size: 21px;
+	cursor: default;
 }
 /* ===============================================   FOOTER CODE ============== FOOTER CODE ================ FOOTER CODE ============ FOOTER CODE =================================================== */
 #footer	{
