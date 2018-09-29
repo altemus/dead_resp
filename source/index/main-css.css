@@ -103,7 +103,7 @@ iframe	  {
 
 .right {
     float: right;
-    
+    font-size: 20px;
 }
 
 .navLi a {
@@ -111,7 +111,6 @@ iframe	  {
     color: black;
     font-family: inherit;
     font-weight: lighter;
-    font-size: 20px;
     text-align: center;
     padding: 10px 0px 10px 0px;
     text-decoration: none;
@@ -148,7 +147,7 @@ iframe	  {
 	font-family: Roboto, sans-serif;
     margin-left: 8px;
     font-weight: 900;
-    font-size: 21px;
+    font-size: 25px;
 	cursor: default;
 }
 /* ===============================================   FOOTER CODE ============== FOOTER CODE ================ FOOTER CODE ============ FOOTER CODE =================================================== */
