@@ -13,6 +13,9 @@ body  {
 	border-radius: 2%;
 	min-height: 800px;
 }
+#mainFGRND {
+	padding: 5px;
+}
 #pageHead {
 	position: sticky;
 	top: 0;
