@@ -1,7 +1,5 @@
 ﻿::-webkit-scrollbar {
-    -webkit-border-radius: 100px;
-    background-color: rgba(0,0,0,0);
-    width: 9px;
+    display: none;
 }
 html {
 	font-family: Roboto;
