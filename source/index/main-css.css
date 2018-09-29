@@ -85,7 +85,8 @@ iframe	  {
 }
 /* ===============================================  TAB CODE ============== TAB CODE ================ TAB CODE ============ TAB CODE =================================================== */
 /* Style the tab */
-ul {
+<style>
+.nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -99,9 +100,8 @@ ul {
     
 }
 
-li a {
+.navLi a {
     display: block;
-    float: right;
     color: black;
     font-family: "Comic Sans MS";
     font-weight: lighter;
@@ -112,12 +112,12 @@ li a {
     
 }
 
-li a:hover:not(.active) {
+.navLi a:hover:not(.active) {
     background-color: inherit;
     cursor: pointer;
 }
 
-li a.active {
+.navLi a.active {
     color: black;
     font-weight: 900;
     background-color: inherit;
