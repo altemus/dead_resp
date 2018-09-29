@@ -1,6 +1,13 @@
-﻿::-webkit-scrollbar {display:none;}
+﻿::-webkit-scrollbar {
+    -webkit-border-radius: 100px;
+    background-color: rgba(0,0,0,0);
+    width: 9px;
+}
 body  {
-    background-color: white;
+    background-image: url("http://www.7diphone.com/wp-content/uploads/City/1136/Tall%20Tower-640x1136%20wallpapers.jpg");
+}
+mainContent {
+	background-color: white;
 }
 h1  {
     color: black;
@@ -130,6 +137,7 @@ iframe	  {
 }
 .navBarTitle {
 	float: left;
+	font-family: Roboto, sans-serif;
     margin-left: 8px;
     font-weight: 900;
     font-size: 21px;
