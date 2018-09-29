@@ -11,6 +11,7 @@ body  {
 	background-color: white;
 	margin: -7px 55px 20px;
 	border-radius: 2%;
+	min-height: 1000px;
 }
 h1  {
     color: black;
