@@ -7,7 +7,7 @@ html {
 	font-family: Roboto;
 }
 body  {
-    background-image: /source/index/wall.jpg;
+    background-image: url(/source/index/wall.jpg);
 }
 #mainBGRND {
 	background-color: white;
