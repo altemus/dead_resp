@@ -37,14 +37,6 @@ hr {
 a:link {
     color: #7A8890;
 }
-a:visited {
-    color: #7A8890;
-}
-a:hover {
-    color: red;
-}
-a:active {
-    color: hotpink;
 }
 .map-title  {
     color: #99AAB5;
@@ -85,7 +77,6 @@ iframe	  {
 }
 /* ===============================================  TAB CODE ============== TAB CODE ================ TAB CODE ============ TAB CODE =================================================== */
 /* Style the tab */
-<style>
 .nav {
     list-style-type: none;
     margin: 0;
