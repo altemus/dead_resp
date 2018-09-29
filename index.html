@@ -9,6 +9,22 @@
 	<link rel="stylesheet" href="source/index/main-css.css">
 </head>
 <body>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("activefooter");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
 <div id="mainBGRND">
 	<div id="pageHead">
 		<div>
@@ -99,44 +115,32 @@
 				evt.currentTarget.className += " active";
 				}
 				document.getElementById("defaultHome").click();
-			}
-				var coll = document.getElementsByClassName("collapsible");
-				var i;
-			
-				for (i = 0; i < coll.length; i++) {
-					coll[i].addEventListener("click", function() {
-						this.classList.toggle("activefooter");
-						var content = this.nextElementSibling;
-						if (content.style.display === "block") {
-							content.style.display = "none";
-						} else {
-							content.style.display = "block";
-						}
-					});
-				}
 		</script>
 		<br><br><br>
 		<div class="footer">
 			<table id="footer" align="center">
 				<tr class="caption">
-					<td><td><button class="collapsible">Contact Us</button></td>
+					<td><button class="collapsible">Contact Us</button>
 					<div class="content">
-						<td>Phone: 267-664-9999</td>
-						<td>Address: 1600 Pennsylvania Avenue, NW Washington DC</td>
-						<td>Email: mrtowsson@gmail.com</td>
+						<p>Phone: 267-664-9999</p><br>
+						<p>Address: 1600 Pennsylvania Avenue, NW Washington DC</p><br>
+						<p>Email: mrtowsson@gmail.com</p><br>
 					</div>
-					<td class="legalinfo"><td><button class="collapsible">Legal</button></td>
+					</td>
+					<td class="legalinfo"><td><button class="collapsible">Legalities</button>
 					<div class="content">
-						<td class="legalinfo"><a href="legal/termsofuse">Terms Of Use</a></td>
-						<td class="legalinfo"><a href="legal/privacypolicy">Privacy Policy</a></td>
-						<td class="legalinfo"><a href="legal/disclaimer">Disclaimer</a></td>
+						<p class="legalinfo"><a href="legal/termsofuse">Terms Of Use</a></p>
+						<p class="legalinfo"><a href="legal/privacypolicy">Privacy Policy</a></p>
+						<p class="legalinfo"><a href="legal/disclaimer">Disclaimer</a></p>
 					</div>
-					<td><td><button class="collapsible">Our Box of Fun Things...</button></td>
+					</td>
+					<td><button class="collapsible">Our Box of Fun Things...</button>
 					<div class="content">
-						<td><a href="games/tetris">Tetris</a></td>
-						<td><a href="personal/cats">Random Cat Picture</a></td>
-						<td><a href="https://www.ebay.com/sch/i.html?_odkw=Clorox+Bleach&_osacat=0&_from=R40&_trksid=p2045573.m570.l1313.TR5.TRC1.A0.H0.TRS0&_nkw=Clorox+Bleach&_sacat=0">Bottle Of Bleach For Sale Near You</a></td>
+						<p><a href="games/tetris">Tetris</a></p>
+						<p><a href="personal/cats">Random Cat Picture</a></p>
+						<p><a href="https://www.ebay.com/sch/i.html?_odkw=Clorox+Bleach&_osacat=0&_from=R40&_trksid=p2045573.m570.l1313.TR5.TRC1.A0.H0.TRS0&_nkw=Clorox+Bleach&_sacat=0">Bottle Of Bleach For Sale Near You</a></p>
 					</div>
+					</td>
 				</tr>
 			</table>
 		</div>
