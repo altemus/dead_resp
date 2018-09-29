@@ -3,6 +3,9 @@
     background-color: rgba(0,0,0,0);
     width: 9px;
 }
+html {
+	font-family: Roboto;
+}
 body  {
     background-image: /source/index/wall.jpg;
 }
@@ -13,11 +16,11 @@ body  {
 }
 h1  {
     color: black;
-    font-family: "Comic Sans MS";
+    font-family: inherit;
 }
 h2  {
     color: black;
-    font-family: "Comic Sans MS";
+    font-family: inherit;
     text-align: center;
     padding-left: 240px;
     padding-bottom: 15px;
@@ -26,7 +29,7 @@ h2  {
 }
 h3  {
     color: black;
-    font-family: "Comic Sans MS";
+    font-family: inherit;
     text-align: left;
     padding-left: 240px;
     padding-bottom: 15px;
@@ -48,8 +51,8 @@ a:link {
 }
 }
 .map-title  {
-    color: #99AAB5;
-    font-family: "Comic Sans MS";
+    color: black;
+    font-family: inherit;
     text-align: left;
     padding-left: 270px;
     padding-bottom: 15px;
@@ -58,8 +61,8 @@ a:link {
 }
 .map-body  {
     white-space: nowrap;
-    color: #99AAB5;
-    font-family: "Comic Sans MS";
+    color: black;
+    font-family: inherit;
     text-align: left;
     padding-left: 70px;
     padding-bottom: 15px;
@@ -67,8 +70,8 @@ a:link {
     font-size: 100%;
 }
 .disaster_itemno  {
-    color: #99AAB5;
-    font-family: "Comic Sans MS";
+    color: black;
+    font-family: inherit;
     text-align: left;
     padding-left: 0px;
     padding-bottom: 15px;
@@ -103,7 +106,7 @@ iframe	  {
 .navLi a {
     display: block;
     color: black;
-    font-family: "Comic Sans MS";
+    font-family: inherit;
     font-weight: lighter;
     font-size: 20px;
     text-align: center;
@@ -148,7 +151,7 @@ iframe	  {
 /* ===============================================   FOOTER CODE ============== FOOTER CODE ================ FOOTER CODE ============ FOOTER CODE =================================================== */
 #footer	{
 	font-family: "Comic Sans MS";
-	color: #99AAB5;
+	color: black;
 	padding-bottom: 250px;
 	position: static;
 	bottom: 0px;
