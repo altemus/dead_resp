@@ -150,7 +150,7 @@ iframe	  {
 }
 /* ===============================================   FOOTER CODE ============== FOOTER CODE ================ FOOTER CODE ============ FOOTER CODE =================================================== */
 #footer	{
-	font-family: "Comic Sans MS";
+	font-family: inherit;
 	color: black;
 	padding-bottom: 250px;
 	position: static;
