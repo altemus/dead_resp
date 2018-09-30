@@ -12,18 +12,18 @@
 <div id="mainBGRND">
 	<div id="pageHead">
 		<div> 
-			<ul class="nav">
+			<ul class="nav nav-tabs" id="myTab">
 				<li class="right navLi"><a class="tablinks rightMostListItem" onclick="tabBar(event, 'Sitemap')">Sitemap</a></li>
 				<li class="right navLi"><a class="tablinks" onclick="tabBar(event, 'Other')">Other<span class="dot"></span></a></li>
 				<li class="right navLi"><a class="tablinks" onclick="tabBar(event, 'About')">About This Page<span class="dot"></span></a></li>
-				<li class="right navLi"><a class="tablinks" id="defaultHome" onclick="tabBar(event, 'Home')">Home<span class="dot"></span></a></li>
+				<li class="right navLi active"><a class="tablinks" id="defaultHome" onclick="tabBar(event, 'Home')">Home<span class="dot"></span></a></li>
 				<li class="navLi navBarTitle"><a class="navBarTitle" onclick="window.location.href='https://sirtowsalot.github.io/'"><img src="/ico/letterS.png" width="30" height="30"></a></li>
 				<li class="navLi navBarTitle"><a class="navBarTitle" onclick="window.location.href='https://sirtowsalot.github.io/'">Sirtowsalot's Website</a></li>
 			</ul>
 		</div>
 	</div>
-	<div id="mainFGRND">
-		<div id="Home" class="tabcontent">
+	<div class="tab-content" id="mainFGRND">
+		<div id="Home" class="tabcontent tab-pane active">
 			<div id="Clock">
 				<center><iframe src="source/clock/clock.html" scrolling="no"></iframe>
 				<script>iFrameResize({log:true})</script></center>
@@ -32,7 +32,7 @@
 			<hr class="head">
 			<h2>This is a simple website for anything I feel I may want to archive, or store. Feel free to have a look.</h2>
 		</div>
-		<div id="Sitemap" class="tabcontent">
+		<div id="Sitemap" class="tabcontent tab-pane">
 			<ul class="map-title" style="list-style-type:none">
 				<li>Sub-sites:</li>
 				<ul class="map-body" style="list-style-type:disc">
@@ -78,7 +78,7 @@
 				</ul>
 			</ul>
 		</div> 
-		<div id="About" class="tabcontent">
+		<div id="About" class="tabcontent tab-pane">
 			<h3>You don't fucking need to know anything about me or my sexy fucking website. <br>Thank You.</h3>
 		</div>
 		<div id="Other" class="tabcontent">
@@ -148,6 +148,24 @@ for (i = 0; i < coll.length; i++) {
     } 
   });
 }
+</script>
+<script>
+$('#myTab a').click(function (e) {
+    e.preventDefault();
+    $(this).tab('show');
+});
+
+// store the currently selected tab in the hash value
+$("ul.nav-tabs > li > a").on("shown.bs.tab", function (e) {
+    var id = $(e.target).attr("href").substr(1);
+    $.cookie('activeTab', id);
+});
+
+    // on load of the page: switch to the currently selected tab
+    var hash = $.cookie('activeTab');
+    if (hash != null) {
+        $('#myTab a[href="#' + hash + '"]').tab('show');
+    }
 </script>
 </body>
 </html>
