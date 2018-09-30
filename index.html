@@ -84,23 +84,7 @@
 		<div id="Other" class="tabcontent">
 			<h3>Well hello there! This is a good time to tell you about the lack of a secret on this page! It's totally not a button hidden on this page as a background color! pffft. Nope. You should just click back to where you came from!</h3>
 		</div>
-		<script>
-			function tabBar(evt, Name) {
-				var i, tabcontent, tablinks;
-					tabcontent = document.getElementsByClassName("tabcontent");
-				for (i = 0; i < tabcontent.length; i++) {
-					tabcontent[i].style.display = "none";
-				}
-				tablinks = document.getElementsByClassName("tablinks");
-				for (i = 0; i < tablinks.length; i++) {
-				tablinks[i].className = tablinks[i].className.replace(" active", "");
-				}
-				document.getElementById(Name).style.display = "block";
-				evt.currentTarget.className += " active";
-			}
-				document.getElementById("defaultHome").click();
-			
-		</script>
+
 		<br><br><br>
 		<div class="footer">
 			<table id="footer" align="center">
