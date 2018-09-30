@@ -177,9 +177,7 @@ td	{
 	border-bottom: 2px solid gray;
 	padding-right: 240px;
 }
-.legalinfo	{
-	padding-right: 225px;
-}
+.legalinfo	{}
 .foot_body	{
 	background-color: inherit;
 }
