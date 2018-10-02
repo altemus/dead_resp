@@ -4,6 +4,7 @@
   <title>Tetris - Sirtowsalots Website</title>
   <link rel="icon" href="../ico/bird.png" type="image/x-icon">
   <link rel="stylesheet" href="../source/buttons.css">
+  <link rel="stylesheet" href="../source/bg&head.css">
   <script type="text/javascript" src="../source/buttons.js"></script>
   <button type = "button" onClick="homeFunction()" id="homeBtn" title="Sends you to the homepage">Home</button>
   <button onclick="topFunction()" id="pgupBtn" title="Sends you to the top of this page">Go to top</button>
@@ -46,7 +47,20 @@
 </head>
 
 <body>
-
+<div id="mainBGRND">
+	<div id="pageHead">
+		<div> 
+			<ul class="nav nav-tabs" id="myTab">
+				<li class="right navLi"><a class="tablinks rightMostListItem" onclick="tabBar(event, 'Sitemap')">Sitemap</a></li>
+				<li class="right navLi"><a class="tablinks" onclick="tabBar(event, 'Other')">Other<span class="dot"></span></a></li>
+				<li class="right navLi"><a class="tablinks" onclick="tabBar(event, 'About')">About This Page<span class="dot"></span></a></li>
+				<li class="right navLi active"><a class="tablinks" id="defaultHome" onclick="tabBar(event, 'Home')">Home<span class="dot"></span></a></li>
+				<li class="navLi navBarTitle"><a class="navBarTitle" onclick="window.location.href='https://sirtowsalot.github.io/'"><img src="/ico/letterS.png" width="30" height="30"></a></li>
+				<li class="navLi navBarTitle"><a class="navBarTitle" onclick="window.location.href='https://sirtowsalot.github.io/'">Sirtowsalot's Website</a></li>
+			</ul>
+		</div>
+	</div>
+<div id="mainFGRND">
   <div id="tetris">
     <div id="menu">
       <p><canvas id="upcoming"></canvas></p>
@@ -484,6 +498,7 @@
     run();
 
   </script>
+</div>
 
 </body>
 </html>
