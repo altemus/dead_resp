@@ -33,6 +33,9 @@
     font-weight: 900;
     background-color: inherit;
 }
+body  {
+    background-image: url(../source/index/wall.jpg);
+}
 .dot {
     height: 2px;
     width: 2px;
